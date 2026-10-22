@@ -45,6 +45,7 @@ body{background-image:repeating-linear-gradient(90deg,rgba(255,215,155,.025) 0 2
 #env.gone{opacity:0;pointer-events:none}
 #env .top{font:800 clamp(1.6rem,7vw,3rem) var(--fh);color:var(--pink);letter-spacing:.2em}
 .glow #env .top{text-shadow:0 0 20px var(--pink)}
+.age18{position:absolute;top:-14px;right:-14px;z-index:8;display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:linear-gradient(145deg,#d8a13c,#8d5b1f);color:#fff;font:900 1.25rem/1 var(--fh);box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 4px rgba(43,27,18,.55);letter-spacing:.03em}
 .envbox{position:relative;width:min(80vw,340px);aspect-ratio:3/2;perspective:900px}
 .envbody{position:absolute;inset:0;background:linear-gradient(145deg,#6a4a2f,#2b1b12);border:2px solid var(--purple);border-radius:10px;z-index:3;clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%)}
 .envback{position:absolute;inset:0;background:#23160f;border:2px solid var(--purple);border-radius:10px;z-index:1}
@@ -313,6 +314,7 @@ section#invite{padding-top:3rem}
 }
 #dress h3[data-t="texts.galleryTitle"] {color:#fff9ed!important;text-shadow:0 2px 4px rgba(32,21,14,.65)!important;letter-spacing:.04em;}
 
+\n@media(max-width:560px){.age18{width:60px;height:60px;font-size:1.05rem;top:-10px;right:-10px}}
 </style>
 <noscript><style>#env{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -321,6 +323,7 @@ section#invite{padding-top:3rem}
 <div id="env" role="dialog" aria-label="Секретний конверт">
   <div class="top" data-t="texts.envTop"></div>
   <div class="envbox" aria-hidden="true">
+    <div class="age18">18+</div>
     <div class="envback"></div><div class="mcard">CRAZY<br>BANYA<br>DISCO</div><div class="envbody"></div><div class="flap"></div>
   </div>
   <p data-t="texts.envSub" style="max-width:440px"></p>
